@@ -6,7 +6,7 @@ public class AOPTest {
 
 	public static void main(String[] args) {
 		
-		LogInterface logInterface = LogFactory.getAnimal(LogImp.class,new AOPMethod() {
+		LogInterface logInterface = LogFactory.getLog(LogImp.class,new AOPMethod() {
 
 			@Override
 			public void before(Object proxy, Method method, Object[] args) {
